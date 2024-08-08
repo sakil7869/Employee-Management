@@ -43,7 +43,7 @@ public class EmployeeDTO {
     @AssertTrue(message = "Employee should be active")
     private Boolean isActive;
 
-    @DecimalMin(value = "65000.50",message = "Salary Must be greater than 65000.50")
+    @DecimalMin(value = "60000.50",message = "Salary Must be greater than 60000.50")
     @DecimalMax(value = "150000.50",message = "Salary must be less than 150000.50")
     private Double salary;
 
